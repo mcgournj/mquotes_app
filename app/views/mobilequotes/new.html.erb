@@ -1,0 +1,29 @@
+<h1>Mobile Access to Stock Quotes - Connect User</h1>
+<%= form_tag("/create", :method => "get") do %>
+  <div class="field">
+  <br />
+  <%= label_tag(:forename, "First Name:") %>
+  <%= text_field_tag(:forename) %>
+  </div>
+
+  <div class="field">
+  <br />
+  <%= label_tag(:lastname, "Last  Name:") %>
+  <%= text_field_tag(:lastname) %> 
+  </div>
+
+  <div class="field"> 
+  <br /> 
+  <%= label_tag(:mobile_no, "Mobile No.:") %>
+  <%= text_field_tag(:mobile_no) %>
+  </div>
+
+  <div class="field">
+  <br />
+  <%= submit_tag(" Submit") %>
+  </div>
+<% end %>
+
+
+
+
