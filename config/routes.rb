@@ -1,7 +1,6 @@
 MquotesApp::Application.routes.draw do
 
-  # head '/'       => 'mobilequotes#connect'
-  match '/' => 'mobilequotes#connect', :via => :head
+  
   post '/'       => 'mobilequotes#show'  
  
   get  '/new'    => 'mobilequotes#new'

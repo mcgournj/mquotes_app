@@ -1,9 +1,7 @@
 class MobilequotesController < ApplicationController
  
 
-  # Connects up TextMagic Service to the URL
-  def connect
-  end
+  
 
   # Create new route between user mobile and Quotes Service ( new and create methods )
   def new
