@@ -1,5 +1,6 @@
 MquotesApp::Application.routes.draw do
 
+  match '/'      => 'mobilequotes#handshake', :via => :head
   
   post '/'       => 'mobilequotes#show'  
  
