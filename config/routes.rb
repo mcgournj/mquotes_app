@@ -1,11 +1,14 @@
 MquotesApp::Application.routes.draw do
 
-  root             :to => 'mobilequotes#show'
+  # head '/'       => 'mobilequotes#connect'
+  match '/' => 'mobilequotes#connect', :via => :head
+  post '/'       => 'mobilequotes#show'  
  
-  match '/new',    :to => 'mobilequotes#new'
+  get  '/new'    => 'mobilequotes#new'
  
-  match '/create', :to => 'mobilequotes#create'
+  get  '/create' => 'mobilequotes#create'
  
+  root       :to => 'mobilequotes#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

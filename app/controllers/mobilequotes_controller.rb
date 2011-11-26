@@ -1,9 +1,17 @@
 class MobilequotesController < ApplicationController
  
+
+  # Connects up TextMagic Service to the URL
+  def connect
+  end
+
+  # Create new route between user mobile and Quotes Service ( new and create methods )
   def new
   end
 
+ 
   def create
+
     puts ""
     puts "Executing Phone Route Creation Action "
     puts ""
@@ -30,6 +38,7 @@ class MobilequotesController < ApplicationController
 
 
 
+  # Retrieves quote and returns it to user mobile through TextMagic service.
   def show
     
  
@@ -65,7 +74,7 @@ class MobilequotesController < ApplicationController
 
    
 
-    # Set usercode and password
+    # Set usercode and password for TextMagic
     api = TextMagic::API.new("mcgournj","1dkmJ4QUcBItZ6e")
     
 
